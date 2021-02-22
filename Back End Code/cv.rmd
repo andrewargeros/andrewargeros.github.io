@@ -69,7 +69,7 @@ CV %>% print_contact_info()
 
 
 
-Language Skills {#skills}
+Programming {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -77,6 +77,12 @@ CV %>% print_skill_bars()
 ```
 
 
+Languages {#lskills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_spoken_bars()
+```
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -143,7 +149,7 @@ CV %<>% print_section('data_science_competitions')
 
 
 
-Selected Press {data-icon=newspaper}
+Publications {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 ```{r}
