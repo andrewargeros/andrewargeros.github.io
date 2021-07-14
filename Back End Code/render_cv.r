@@ -17,5 +17,5 @@ rmarkdown::render("C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Ba
                   output_file = 'C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Back End Code/temp.html')
 
 # Convert to PDF using Pagedown
-pagedown::chrome_print(input = tmp_html_cv_loc,
+pagedown::chrome_print(input = "C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Back End Code/temp.html",
                        output = "C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/argeros_cv.pdf")
