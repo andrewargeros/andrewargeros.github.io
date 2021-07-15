@@ -142,11 +142,6 @@ Industry Experience {data-icon=suitcase}
 CV %<>% print_section('industry_positions')
 ```
 
-```{r}
-# Note the special double pipe so we modify the CV object in place
-CV %<>% print_text_block("industy_experience_aside") 
-```
-
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <br>
 <br>
