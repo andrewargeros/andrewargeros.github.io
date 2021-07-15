@@ -11,6 +11,15 @@ output:
     self_contained: true
 ---
 
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0.2rem;
+  --sidebar-background-color: #f7fbff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+```
+
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
   results='asis', 
@@ -131,6 +140,11 @@ Industry Experience {data-icon=suitcase}
 
 ```{r}
 CV %<>% print_section('industry_positions')
+```
+
+```{r}
+# Note the special double pipe so we modify the CV object in place
+CV %<>% print_text_block("industy_experience_aside") 
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
