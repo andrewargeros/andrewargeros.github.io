@@ -148,6 +148,9 @@ CV %<>% print_section('industry_positions')
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
 
 Data Science Projects {data-icon=chart-line}
 --------------------------------------------------------------------------------
