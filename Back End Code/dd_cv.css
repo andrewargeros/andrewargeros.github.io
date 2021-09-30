@@ -90,6 +90,9 @@ sup {
   background-color: #08306b;
 }
 
+/* Remove Link Colors */
+a { color: inherit; }
+
 /* Remove the fake bullets from lists */
 .aside li::before {
   content: auto;
