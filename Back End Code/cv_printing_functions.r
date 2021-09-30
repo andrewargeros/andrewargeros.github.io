@@ -117,7 +117,8 @@ sanitize_links <- function(cv, text){
 
       # Build map of link destination to superscript
       link_superscript_mappings <- purrr::set_names(
-        paste0("<sup>", (1:n_new_links) + n_links, "</sup>"),
+        #paste0("<sup>", (1:n_new_links) + n_links, "</sup>"),
+        paste0(" "),
         paste0("(", link_destinations, ")")
       )
 
