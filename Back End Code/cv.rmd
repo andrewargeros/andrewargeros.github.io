@@ -63,7 +63,7 @@ Aside
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this CV online with links at andrewargeros.com/cv")
+  cat("View online with links at andrewargeros.com/resume")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/andrewargeros/andrewargeros.github.io/raw/master/argeros_cv.pdf)")
 }
