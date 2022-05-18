@@ -6,16 +6,16 @@
 # for the HTML and PDF rendering. This exercise is left to the reader.
 
 # Knit the HTML version
-rmarkdown::render("C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Back End Code/cv.rmd",
+rmarkdown::render("/Users/andrewargeros/Documents/andrewargeros.github.io/Back End Code/cv.rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/index.html")
+                  output_file = "/Users/andrewargeros/Documents/andrewargeros.github.io/index.html")
 
 # Knit the PDF version to temporary html location
 # tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Back End Code/cv.rmd",
+rmarkdown::render("/Users/andrewargeros/Documents/andrewargeros.github.io/Back End Code/cv.rmd",
                   params = list(pdf_mode = TRUE),
-                  output_file = 'C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Back End Code/temp.html')
+                  output_file = '/Users/andrewargeros/Documents/andrewargeros.github.io/Back End Code/temp.html')
 
 # Convert to PDF using Pagedown
-pagedown::chrome_print(input = "C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/Back End Code/temp.html",
-                       output = "C:/Users/aargeros/Documents/GitHub/andrewargeros.github.io/argeros_cv.pdf")
+pagedown::chrome_print(input = "/Users/andrewargeros/Documents/andrewargeros.github.io/Back End Code/temp.html",
+                       output = "/Users/andrewargeros/Documents/andrewargeros.github.io/argeros_cv.pdf")
