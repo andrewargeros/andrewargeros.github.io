@@ -7,7 +7,7 @@ params:
     value: true
 output:
   pagedown::html_resume:
-    css: ['/Users/andrewargeros/Desktop/andrewargeros.github.io/Back End Code/dd_cv.css', 'resume']
+    css: ['/Users/andrewargeros/Documents/andrewargeros.github.io/Back End Code/dd_cv.css', 'resume']
     self_contained: true
 ---
 
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 )
 
 library(magrittr) # For the pipe
-source("/Users/andrewargeros/Desktop/andrewargeros.github.io/Back End Code/cv_printing_functions.r")
+source("/Users/andrewargeros/Documents/andrewargeros.github.io/Back End Code/cv_printing_functions.r")
 
 # Read in all data and initialize a CV printer object
 CV <- create_CV_object(
